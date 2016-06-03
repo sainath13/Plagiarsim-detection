@@ -1,0 +1,31 @@
+#Definition
+	Plagiarism detection is the process of locating instances of plagiarism within a work or document. 
+
+#rogeting
+	The practice of plagiarizing by use of sufficient word substitutions to elude detection software is known as rogeting
+
+#jackpot
+	Computer-assisted plagiarism detection (CaPD) is an Information retrieval (IR) task supported by specialized IR systems, referred to as plagiarism detection systems (PDS)
+
+
+#PSD types
+	external 
+	intrinsic
+
+plagarism 
+tf idf
+
+princeton wordnet : using this simlar words can be found out for semantic may be
+					something form the video
+					that syntactic representation of the meaning
+
+
+$ apply fingerprinting on the sgm files : see where it leads
+
+
+
+machine learning
+Neural network
+color image mapping things
+trival ideas vs original ideas
+semantic wordnet things

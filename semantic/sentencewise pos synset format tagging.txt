@@ -1,0 +1,31 @@
+from nltk.corpus import wordnet as wn
+
+def penn_to_wn(tag):
+    if tag.startswith('J'):
+        return wn.ADJ
+    elif tag.startswith('N'):
+        return wn.NOUN
+    elif tag.startswith('R'):
+        return wn.ADV
+    elif tag.startswith('V'):
+        return wn.VERB
+    return None
+
+from nltk.stem import WordNetLemmatizer
+from nltk import pos_tag, word_tokenize
+
+sentence = "I am going to buy some gifts"
+tagged = pos_tag(word_tokenize(sentence))
+
+synsets = []
+lemmatzr = WordNetLemmatizer()
+
+for token in tagged:
+    wn_tag = penn_to_wn(token[1])
+    if not wn_tag:
+        continue
+
+    lemma = lemmatzr.lemmatize(token[0], pos=wn_tag)
+    synsets.append(wn.synsets(lemma, pos=wn_tag)[0])
+
+print synsets

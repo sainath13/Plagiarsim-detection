@@ -1,0 +1,5 @@
+create a repository that gets uodated everytime we check for plagiarism
+thats all
+pickle or json
+don't really need json 
+need pickle
